@@ -5,9 +5,13 @@ Legend: ✅ done · 🟡 in progress · ⬜ not started. Item codes (H1, M6, ...
 
 ## 🎯 Where we are
 
-- Camp hub plus **6 zones**: Slime Fen, Goblin Warrens, Orc Badlands, Ogre Crags, Cinder Wastes and Ashland Caverns (level 21-25). Every zone can be edited with selectable Spawn Points and Loot Nodes.
+- The game is now called **Diablo's Reign**.
+- **8 playable classes** (Hemomancer, Barbarian, Crusader, Demon Hunter, Monk, Necromancer, Witch Doctor, Wizard), picked for each new hero, each with its own skills, resource, left-click attack and look.
+- **Skill system:** 169 skills with 5 runes each, a skill screen (`K`), nine elements, and a visual effect for every skill.
+- **The story and Act I:** the eight Cinder Shards, a 10-chapter story from the camp to Diablo, side quests, per-land bounties, a quest tracker, a quest log (`J`) and quest dialogue with the camp's people.
+- Camp hub plus **9 lands**: Slime Fen, Goblin Warrens, Orc Badlands, Ogre Crags, Cinder Wastes, Bone Crypt, Frozen Peaks, Blighted Swamp and Ashland Caverns. Every land can be edited with selectable Spawn Points, Loot Nodes and quest markers.
 - **Diablo** is in his Ashland throne room with his own rigged model and Phase 1 abilities (Ground Slam, Fire Wall, melee combo).
-- Loot: Normal to Set rarity, weapon, armour and shield **parts**, editable affixes, merchant, blacksmith, stash, and save games.
+- Loot: Normal to Legendary rarity, weapon, armour and shield **parts**, **27 class weapons**, zone gear sets, editable affixes, merchant, blacksmith, stash, and save games.
 - Level cap 70, driven by one file (`DA_LevelSystem`).
 
 ---
@@ -27,16 +31,20 @@ Legend: ✅ done · 🟡 in progress · ⬜ not started. Item codes (H1, M6, ...
 | ⬜ | **H15** Diablo's real fight | No gliding, his swings land, Fire Wall appears in front of him, check for stretching at shoulders and hips |
 | ⬜ | **H17** Level system balance | Tune `DA_LevelSystem`; check how hard the fire zones hit |
 | ⬜ | **H16** Every enemy walks | Watch packs after the anti-glide fix |
+| ⬜ | Classes | Play each class: its start, skills, resource, left-click attack and balance (`DA_HeroClasses`) |
+| ⬜ | Class weapons | Drops, models in hand, the class bonus (`DA_ItemAffixes` > Class Weapons) |
+| 🟡 | Story and quests | Chapters 0-2 checked in play; play through chapters 3-10, the side quests and the bounties |
 
 ## 2. Next features (medium priority)
 
 | | Item | Notes |
 |---|---|---|
 | 🟡 | **M6** Diablo's arena and boss | Arena (Zone 6) and Phase 1 are done. **Next:** Phase 2 *Infernal Mage*, Phase 3 *Cataclysm*, a lava damage effect. Abilities are designed with Rick. |
-| ⬜ | **M6b** Skill tree and prestige system | |
+| 🟡 | **M6b** Skill tree and prestige system | Skills and runes are done; prestige is next |
 | ⬜ | **M5** Combo swing system | Chained multi-attack weapon combos |
 | ⬜ | **M9** Custom models for every enemy | Reuse the Diablo rig pipeline (`blender_rig_diablo2.py`, `build_diablo2_rigged.py`) |
-| 🟡 | Skill visual effects | Every skill gets a distinctive animated effect; style guide in `Docs/SKILL-FX-STYLE.md` |
+| ✅ | Skill visual effects | Every skill has a distinctive animated effect; style guide in `Docs/SKILL-FX-STYLE.md` |
+| ⬜ | Act II | The story leaves room for it: the heart was never truly Diablo's |
 
 ## 3. Later (low priority)
 
@@ -46,7 +54,7 @@ Legend: ✅ done · 🟡 in progress · ⬜ not started. Item codes (H1, M6, ...
 | ⬜ | **H7** Dev map normal variant | Give `DA_Enemy_Elite` a Minion twin, then re-run `build_dev_markers.py` |
 | ⬜ | **L1** Minimap | |
 | ⬜ | **L2** Destructibles and hazards | Climbing and crawling enemy spawns |
-| ⬜ | **L3** Additional classes | Archer, Summoner, ... |
+| ✅ | **L3** Additional classes | Eight classes are playable |
 | ⬜ | **L4** Followers | Companions with their own gear, skills and classes |
 | ⬜ | **L5** Artisan progression | Artisans level up with use |
 | ⬜ | **L6** Quality-of-life pickups | Health orbs, auto-collected gold |
@@ -93,6 +101,15 @@ Legend: ✅ done · 🟡 in progress · ⬜ not started. Item codes (H1, M6, ...
 - Merchant (8-item shelf, Item of the Day, restock every 5 minutes)
 - Prop loot assets, and a loot override for a single container
 - Inventory drag-and-drop, Stats tab, item weight and durability removed
+
+**Classes, skills and story (27-29 Sep)**
+- Eight playable classes with a class pick for new heroes; own skills, resource, left-click attack, starting weapon and look
+- 169 skills with 5 runes each, the `K` skill screen, nine elements, Test Mode, and a visual effect for every skill
+- 27 class weapons (9 kinds x 3 designs), each modelled in Blender, stronger for their class's skills
+- Every ordinary weapon, shield and jewel modelled; zone gear sets; detail normal maps on enemies
+- Camp people: healer, blessings, bounties and a wolf companion
+- The story (the eight Cinder Shards), Act I's 10 chapters, 7 side quests, per-land bounties, quest markers in every land, the tracker, the `J` quest log and quest dialogue
+- The game renamed to Diablo's Reign, with a new title screen
 
 **Progression and camera**
 - Level cap 70 using Rick's XP table; zones scale with the hero
