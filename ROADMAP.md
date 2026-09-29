@@ -11,8 +11,8 @@ Legend: ✅ done · 🟡 in progress · ⬜ not started. Item codes (H1, M6, ...
 - **The story and Act I:** the eight Cinder Shards, a 10-chapter story from the camp to Diablo, side quests, per-land bounties, a quest tracker, a quest log (`J`) and quest dialogue with the camp's people.
 - Camp hub plus **9 lands**: Slime Fen, Goblin Warrens, Orc Badlands, Ogre Crags, Cinder Wastes, Bone Crypt, Frozen Peaks, Blighted Swamp and Ashland Caverns. Every land can be edited with selectable Spawn Points, Loot Nodes and quest markers.
 - **Diablo** is in his Ashland throne room with his own rigged model and Phase 1 abilities (Ground Slam, Fire Wall, melee combo).
-- Loot: Normal to Legendary rarity, weapon, armour and shield **parts**, **27 class weapons**, zone gear sets, editable affixes, merchant, blacksmith, stash, and save games.
-- Level cap 70, driven by one file (`DA_LevelSystem`).
+- Loot: Normal to Legendary rarity, weapon, armour and shield **parts**, **27 class weapons**, zone gear sets, merchant, blacksmith, stash, and save games.
+- Level cap 70.
 
 ---
 
